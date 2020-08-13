@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %} Welcome Page{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4 text-dark">Welcome</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p class="lead text-dark"> Click the button below to get your JWT.  </p>
+  <a class="btn btn-dark btn-lg" id="grantAccess" role="button" href="/login">Sign In</a>
+
+</div>
+
+{% endblock %}

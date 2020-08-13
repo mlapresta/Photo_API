@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %} User Info {% endblock %}
+
+
+{% block content %}
+<div class="container-lg">
+<h2>JWT</h2>
+<textarea class="form-control" type="text" rows="12" id="jwt_field">{{jwt}}</textarea>
+<button type="button" class="btn btn-light" onclick="copyJWT()">Copy Text</button>
+</div>
+<div class="container-lg">
+<table class="table table-bordered table-dark">
+  <tbody>
+    <tr>
+      <th>Sub:</th>
+      <td>{{user_id}}</td>
+    </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{user_email}}</td>
+      </tr>
+  </tbody>
+</table>
+<a class="btn btn-light" href="/clear" role="button">Clear Session</a>
+
+
+</div>
+{% endblock %}
